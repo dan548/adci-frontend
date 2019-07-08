@@ -1,0 +1,13 @@
+.contact__part {
+    font-size: 12px;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

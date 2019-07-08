@@ -1,0 +1,12 @@
+.form-field {
+    border: none;
+    font-size: 14px;
+    min-height: 32px;
+}
+
+.form-field::placeholder {
+    line-height: 17px;
+    color: #8c8c8c;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}

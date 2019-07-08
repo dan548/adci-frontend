@@ -1,0 +1,13 @@
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paragraph__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}

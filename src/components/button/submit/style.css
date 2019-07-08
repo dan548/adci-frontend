@@ -1,0 +1,12 @@
+.submit-button {
+    background: #e2d1a6;
+    color: #ffffff;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.submit-button:disabled {
+    background: #000000;
+}
