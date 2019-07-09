@@ -1,7 +1,16 @@
 {
   "subscribe-form": {
     "button": "iscriviti",
+    "full-name": "Nome e Cognome",
+    "sub": "Mi iscrivo alla Newsletter"
+  },
+  "form": {
     "agreement": "Acconsento al trattamento dei dati",
-    "full-name": "Nome e Cognome"
+    "login": "accedi",
+    "register": "registrati",
+    "e-mail": "E-mail",
+    "password": "Password",
+    "firstName": "Nome",
+    "lastName": "Cognome"
   }
 }

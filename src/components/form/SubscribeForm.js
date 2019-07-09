@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+import { connect } from 'react-redux';
 import { I18n } from "react-redux-i18n";
 
-import './style.css';
+import FormField from './field/FormField';
+import SubmitButton from '../button/submit/SubmitButton';
+import Checkbox from './checkbox/Checkbox';
 
-import FormField from '../../../../../../components/form/FormField';
-import SubmitButton from '../../../../../../components/button/submit/SubmitButton';
-import { connect } from 'react-redux';
+import './style.css';
 
 class SubscribeForm extends React.Component {
 
@@ -51,20 +53,21 @@ class SubscribeForm extends React.Component {
     const check = () => this.state.checked && this.state.name !== '' && this.state.email !== '';
 
     return (
-      <form className={'footer__subscribe-form'} onSubmit={this.onSubmit}>
-        <div className={'footer__form-field-wrapper'}>
-          <FormField type={'text'} onChange={this.onChangeName} value={this.state.name} className={'footer__full-name'} placeholder={I18n.t('subscribe-form.full-name')}/>
-          <FormField type={'e-mail'} onChange={this.onChangeEmail} value={this.state.email} className={'footer__e-mail'} placeholder={'Email'}/>
+      <form className={`form${this.props.className ? ` ${this.props.className}` : ''}`} onSubmit={this.onSubmit}>
+        <div className={'footer__form-field-wrapper form-field-wrapper'}>
+          <FormField type={'text'} onChange={this.onChangeName} value={this.state.name} className={'footer__form-field'} placeholder={I18n.t('subscribe-form.full-name')}/>
+          <FormField type={'e-mail'} onChange={this.onChangeEmail} value={this.state.email} className={'footer__form-field'} placeholder={'Email'}/>
         </div>
-        <div className={'footer__agreement'}>
-          <input type={'checkbox'} className={'footer__agreement-checkbox'} checked={this.state.checked} onClick={this.onClick}/>
-          <label className={'checkbox-label'}>{I18n.t('subscribe-form.agreement')}</label>
-        </div>
+        <Checkbox className={'footer__agreement'} onClick={this.onClick} checked={this.state.checked} text={I18n.t('form.agreement')}/>
         <SubmitButton text={I18n.t('subscribe-form.button')} disabled={!check()} className={'footer__subscribe-button'}/>
       </form>
     );
   }
 }
+
+SubscribeForm.propTypes = {
+  className: PropTypes.string
+};
 
 const mapStateToProps = (state) => ({
   locale: state.i18n.locale

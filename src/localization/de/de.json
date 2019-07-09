@@ -1,7 +1,16 @@
 {
   "subscribe-form": {
     "button": "abonnieren",
+    "full-name": "Vorname und Nachname",
+    "sub": "Ich abonniere den Newsletter"
+  },
+  "form": {
     "agreement": "Ich stimme der Verarbeitung von Daten zu",
-    "full-name": "Vorname und Nachname"
+    "login": "login",
+    "register": "anmeldung",
+    "e-mail": "E-mail",
+    "password": "Passwort",
+    "firstName": "Vorname",
+    "lastName": "Nachname"
   }
 }

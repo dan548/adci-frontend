@@ -1,7 +1,16 @@
 {
   "subscribe-form": {
     "button": "subscribe",
+    "full-name": "First and last name",
+    "sub": "I subscribe to the Newsletter"
+  },
+  "form": {
     "agreement": "I agree to the processing of my personal data",
-    "full-name": "First and last name"
+    "login": "login",
+    "register": "register",
+    "e-mail": "E-mail",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name"
   }
 }

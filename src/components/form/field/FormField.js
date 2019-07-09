@@ -9,7 +9,7 @@ export default class FormField extends React.Component {
 
     return (
       <input
-        className={`form-field ${className}`}
+        className={`form-field${className ? ` ${className}` : ''}`}
         value={value}
         type={type}
         name={name}
@@ -22,7 +22,6 @@ export default class FormField extends React.Component {
 }
 
 FormField.defaultProps = {
-  className: '',
   type: 'text',
   name: '',
   placeholder: '',

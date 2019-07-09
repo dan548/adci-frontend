@@ -1,12 +1,15 @@
-.form-field {
-    border: none;
-    font-size: 14px;
-    min-height: 32px;
+.footer__subscribe-button {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
 }
 
-.form-field::placeholder {
-    line-height: 17px;
-    color: #8c8c8c;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
+.footer__form-field-wrapper {
+    flex-basis: 56%;
+}
+
+.form-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

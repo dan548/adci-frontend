@@ -9,7 +9,7 @@ export default class SubmitButton extends React.Component {
     const { text, className, disabled } = this.props;
 
     return (
-      <button disabled={disabled} className={`submit-button${className ? ` ${className}` : ''}`} type={'submit'}>{text}</button>
+      <button disabled={disabled} className={`submit-button form__button${className ? ` ${className}` : ''}`} type={'submit'}>{text}</button>
     );
   }
 

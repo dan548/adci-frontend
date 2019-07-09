@@ -5,8 +5,15 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
+    font-size: 18px;
 }
 
 .submit-button:disabled {
     background: #000000;
+}
+
+.form__button {
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
 }

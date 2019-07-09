@@ -1,5 +1,69 @@
 .header__logo {
     background: url('./images/logo.png') no-repeat 1.7%;
     height: 100%;
-    background-size: auto 64.6%;
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-size: contain;
+}
+
+.header__modal-menu {
+    text-transform: uppercase;
+    align-self: flex-end;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 19px;
+    border: none;
+    outline: none;
+    background-color: #353436;
+}
+
+.header__modal-menu::after {
+    content: url("./images/lock.png");
+    position: absolute;
+    right: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.header__main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.header__menu-item {
+    text-decoration: none;
+    color: white;
+    outline: none;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header__menu-item:first-child {
+    padding-left: 0;
+}
+
+.header__menu-item:last-child {
+    padding-right: 0;
+}
+
+.active {
+    color: #e2d1a6;
+    font-weight: 700;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-grow: 2;
+    justify-content: flex-end;
+    flex-shrink: 2;
 }

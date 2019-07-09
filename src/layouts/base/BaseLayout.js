@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './style.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+
+import './style.css';
 
 export default class BaseLayout extends React.Component {
   render() {

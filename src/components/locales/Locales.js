@@ -15,8 +15,11 @@ class Locales extends React.Component {
   };
 
   render() {
+
+    const { className } = this.props;
+
     return (
-      <ul className={'locale-list'}>
+      <ul className={`locale-list${className ? ` ${className}` : ''}`}>
         <li onClick={() => this.switchLang('it')} className={'locale'}>ITA</li>
         <li onClick={() => this.switchLang('en')} className={'locale'}>ENG</li>
         <li onClick={() => this.switchLang('de')} className={'locale'}>DEU</li>
@@ -31,7 +34,8 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 Locales.propTypes = {
-  changeLocale: PropTypes.func
+  changeLocale: PropTypes.func,
+  className: PropTypes.string
 };
 
 export default connect(null, mapDispatchToProps)(Locales);
