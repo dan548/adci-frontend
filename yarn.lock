@@ -8095,8 +8095,10 @@ react-sizeme@^2.6.7:
     shallowequal "^1.1.0"
     throttle-debounce "^2.1.0"
 
-"react-slick-image@file:../../react-image-slick":
-  version "0.2.1"
+react-slick-image@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/react-slick-image/-/react-slick-image-0.2.2.tgz#0b89b4232e6f81bacee46e8831efaac8f361ee3d"
+  integrity sha512-tvGwczQVYwU736vb1B8pOLTBdzNAGCeKMOk6snHGgD+96165DiNlW5YRyktyd6stJgSDxFizji4J/6ZrRFWRIg==
   dependencies:
     react-sizeme "^2.6.7"
     react-slick "^0.24.0"
