@@ -3,24 +3,24 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    color: white;
-    font-weight: 400;
+    left: -1rem;
+    z-index: 2;
+    background: #343536;
+    padding: 0.7vw 0.8vw 0.7vw 1.1vw;
 }
 
 .dropdown {
     position: relative;
-    line-height: 24px;
-    font-family: "Open Sans", sans-serif;
+    line-height: 1.33;
     height: 100%;
 }
 
 .dropdown__title {
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 18px;
-    top: 50%;
+    top: 82%;
     position: relative;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
 }
 
 .dropdown__options_hidden {
@@ -30,12 +30,14 @@
 .dropdown__option {
     text-transform: uppercase;
     border-bottom: 0.75px solid #ffffff;
-    font-size: 16px;
+    font-size: 1.29032258065vw;
     color: #fffefe;
+    margin-bottom: 0.4rem;
 }
 
 .dropdown__option:last-child {
     border: none;
+    margin-bottom: 0.2rem;
 }
 
 .dropdown__option:hover {

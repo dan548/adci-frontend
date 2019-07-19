@@ -1,9 +1,12 @@
 .checkbox {
-    width: 8px;
-    height: 8px;
+    transform: scale(0.7);
+    position: relative;
+    left: -0.15rem;
 }
 
 .checkbox-label {
-    font-size: 10px;
     color: #b5b4b4;
+    font-size: 0.6rem;
+    top: -0.5em;
+    position: relative;
 }

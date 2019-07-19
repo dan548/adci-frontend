@@ -1,20 +1,21 @@
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .paragraph__text {
     margin: 0;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 0.666rem;
+    line-height: 1.41666666667;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+    flex-grow: 1;
 }
 
 .paragraph__title {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.777rem;
+    line-height: 1.71428571429;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;

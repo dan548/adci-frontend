@@ -38,7 +38,7 @@ class Footer extends React.Component {
         </div>
         <div className={'footer__bottom'}>
           <Contact/>
-          <Social/>
+          <Social footerWidth={this.props.size.width}/>
           <Locales/>
         </div>
       </footer>

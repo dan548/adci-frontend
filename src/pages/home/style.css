@@ -1,0 +1,135 @@
+.slick {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slick-track, .slick-list {
+    height: 100%;
+}
+
+.slick-dots {
+    bottom: 50px;
+}
+
+.slick-dots li {
+    margin: 0 3px;
+}
+
+.slick-dots li button::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000000;
+    opacity: 1;
+    content: ' ';
+}
+
+.slick-dots li.slick-active button::before {
+    background-color: #e2d1a6;
+}
+
+.slick__box {
+    position: absolute;
+    top: 37.4%;
+    right: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8);
+    height: 20.3%;
+    width: 41.5%;
+    box-sizing: border-box;
+    padding: 0.8em 2.8em 0 1.6em;
+}
+
+.slick__box-title {
+    color: #020202;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    height: 40%;
+    text-align: center;
+    font-size: 1.63rem;
+}
+
+.slick__box-text {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 0.3em;
+    line-height: 1.4;
+}
+
+.slider-menu__button {
+    height: 30px;
+    width: 85px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    bottom: 3.7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slider-menu__button_open {
+    transform: rotate(180deg);
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.slider-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-menu__blocks {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.slider-menu__block {
+    flex-basis: 33.333333%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0.5% 1.666% 0.5% 1.333%;
+    justify-content: space-between;
+}
+
+.slider-menu__title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.555rem;
+    line-height: 1.1;
+}
+
+.slider-menu__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.888rem;
+    line-height: 1.6;
+    margin-bottom: 0.5em;
+}
+
+.slider-menu__more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.slider-menu__more {
+    align-self: flex-end;
+}
+
+.slick-slider {
+    height: 100%;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: stretch;
+}

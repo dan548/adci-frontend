@@ -70,3 +70,7 @@ code {
   flex-direction: column;
   justify-content: space-between;
 }
+
+html {
+  font-size: 1.67441860465vh;
+}

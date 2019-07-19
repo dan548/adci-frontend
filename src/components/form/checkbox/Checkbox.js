@@ -10,7 +10,7 @@ export default class Checkbox extends React.Component {
 
     return (
       <div className={`named-checkbox${addClassName}`}>
-        <input type={'checkbox'} className={'checkbox'} checked={this.props.checked} onClick={this.props.onClick}/>
+        <input type={'checkbox'} className={'checkbox'} onChange={() => {}} checked={this.props.checked} onClick={this.props.onClick}/>
         <label className={'checkbox-label'}>{this.props.text}</label>
       </div>
     );

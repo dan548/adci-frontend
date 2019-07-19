@@ -31,7 +31,7 @@ export default class Dropdown extends React.Component {
     return (
       <div onMouseOver={() => this.handleMouseOver(title)} onMouseOut={this.handleMouseOut} className={`dropdown${className ? ` ${className}` : ''}`}>
         <div className={'dropdown__title'}>{title}</div>
-        <div className={`dropdown__options${this.state.hovered === title ? '' : ' dropdown__options_hidden'}`}>
+        <div className={`${sections ? 'dropdown__options' : ''}${this.state.hovered === title ? '' : ' dropdown__options_hidden'}`}>
           {sections ? sections.map( (item) => {
             return <div key={item} className={'dropdown__option'}>{item}</div>;
           }) : ''}

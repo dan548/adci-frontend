@@ -1,12 +1,84 @@
 .footer {
-
+    flex-basis: 25%;
 }
 
 .main {
-    flex-grow: 1;
     flex-basis: 62%;
+    max-height: 65vh;
 }
 
 .header {
-    flex-basis: 12.5%;
+    flex-grow: 1;
+}
+
+@media screen and (max-aspect-ratio: 904/767) {
+    .slick__box {
+        visibility: hidden;
+    }
+    .contact, .social-list {
+        display: none;
+    }
+    .footer__bottom {
+        justify-content: center;
+    }
+    .footer__main .paragraph {
+        display: none;
+    }
+    .footer__main {
+        justify-content: center;
+    }
+    .footer__subscribe {
+        align-items: center;
+        flex-basis: 80%;
+    }
+    .footer__subscribe-form {
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer__form-field-wrapper {
+        justify-content: flex-start;
+        flex-basis: 30%;
+    }
+    .footer__agreement {
+        flex-grow: 1;
+        flex-basis: 50%;
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__subscribe-button {
+        flex-shrink: 2;
+    }
+    .checkbox-label {
+        top: 0;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .main {
+        display: none;
+    }
+    .header {
+        height: 10vh;
+        flex-grow: 0;
+    }
+    .footer__subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__agreement {
+        align-self: center;
+    }
+    .checkbox, .checkbox-label {
+        height: min-content;
+    }
+}
+
+@media screen and (max-aspect-ratio: 683/767) {
+    .header__modal-menu, .header__logo {
+        display: none;
+    }
+    .header__menu {
+        justify-content: center;
+    }
 }

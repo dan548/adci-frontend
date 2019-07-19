@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.95rem 0 0;
 }
 
 .modal__close {
@@ -16,15 +18,14 @@
 }
 
 .modal__header {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 1.333rem;
+    line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     font-family: "Playfair Display", serif;
     color: white;
-    margin-left: auto;
-    margin-right: -46px;
+    margin-left: 8.1em;
 }
 
 .modal__top {
@@ -57,13 +58,15 @@
     justify-content: space-evenly;
     color: white;
     flex-grow: 1;
-    margin-bottom: 25px;
+    margin-bottom: 1.4rem;
+    margin-left: 0.4rem;
 }
 
 .modal__content-part {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-basis: 32%;
 }
 
 .form {
@@ -71,4 +74,57 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+}
+
+.form-login {
+    justify-content: flex-start;
+}
+
+.modal__paragraph-title {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.form__field {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 0.5em;
+    height: 1.8rem;
+}
+
+.modal__register {
+    margin-left: 0.5rem;
+}
+
+.modal__login {
+    margin-left: 0.2rem;
+}
+
+.modal__checkbox label {
+    font-size: 0.53rem;
+}
+
+.form__login-wrapper {
+    flex-basis: 30%;
+}
+
+.form__register-wrapper {
+    flex-basis: 66%;
+}
+
+.form__login-button {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.form__password-recover {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    color: #b5b4b4;
+    font-size: 0.7rem;
+    width: max-content;
 }

@@ -95,26 +95,27 @@ class Modal extends React.Component {
         </div>
         <div className="modal__content">
           <div className={'modal__login modal__content-part'}>
-            <h3 className={'paragraph__title'}>{I18n.t('form.login')}</h3>
-            <form className={'form'} onSubmit={this.onSubmit}>
-              <div className={'form-field-wrapper'}>
+            <h3 className={'paragraph__title modal__paragraph-title'}>{I18n.t('form.login')}</h3>
+            <form className={'form form-login'} onSubmit={this.onSubmit}>
+              <div className={'form-field-wrapper form__login-wrapper'}>
                 <FormField type={'e-mail'} className={'form__field'} placeholder={I18n.t('form.e-mail')} value={this.state.eMail} onChange={this.onChangeEMail}/>
                 <FormField type={'password'} className={'form__field'} placeholder={I18n.t('form.password')} value={this.state.password} onChange={this.onChangePassword}/>
               </div>
-              <SubmitButton text={I18n.t('form.login')} disabled={!this.checkMailPassword()}/>
+              <SubmitButton className={'form__login-button'} text={I18n.t('form.login')} disabled={!this.checkMailPassword()}/>
+              <button onClick={() => {}} className={'form__password-recover'}>Password dimenticata</button>
             </form>
           </div>
           <div className={'modal__register modal__content-part'}>
-            <h3 className={'paragraph__title'}>{I18n.t('form.register')}</h3>
+            <h3 className={'paragraph__title modal__paragraph-title'}>{I18n.t('form.register')}</h3>
             <form className={'form'} onSubmit={this.onSubmit}>
-              <div className={'form-field-wrapper'}>
+              <div className={'form-field-wrapper form__register-wrapper'}>
                 <FormField type={'text'} className={'form__field'} placeholder={I18n.t('form.firstName')} value={this.state.firstName} onChange={this.onChangeFirstName}/>
                 <FormField type={'text'} className={'form__field'} placeholder={I18n.t('form.lastName')} value={this.state.lastName} onChange={this.onChangeLastName}/>
                 <FormField type={'e-mail'} className={'form__field'} placeholder={I18n.t('form.e-mail')} value={this.state.eMail} onChange={this.onChangeEMail}/>
                 <FormField type={'password'} className={'form__field'} placeholder={I18n.t('form.password')} value={this.state.password} onChange={this.onChangePassword}/>
               </div>
-              <Checkbox onClick={this.onClickData} checked={this.state.data} text={I18n.t('form.agreement')}/>
-              <Checkbox onClick={this.onClickSubscribe} checked={this.state.subscribe} text={I18n.t('subscribe-form.sub')}/>
+              <Checkbox className={'modal__checkbox'} onClick={this.onClickData} checked={this.state.data} text={I18n.t('form.agreement')}/>
+              <Checkbox className={'modal__checkbox'} onClick={this.onClickSubscribe} checked={this.state.subscribe} text={I18n.t('subscribe-form.sub')}/>
               <SubmitButton text={I18n.t('form.register')} disabled={!this.checkInputs()} />
             </form>
           </div>

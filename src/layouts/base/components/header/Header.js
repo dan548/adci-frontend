@@ -20,7 +20,7 @@ class Header extends React.Component {
       <header className={'header'}>
         <Popup overlayStyle={{'background': 'rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%',
         'height': `calc(100vh - ${fHeight}px)`}}
-               contentStyle={{'padding': '0', 'background': '#343536', 'height': '44.7%'}}
+               contentStyle={{'width': '46.3%', 'margin': '20% auto', 'padding': '0', 'background': '#343536', 'height': '44.7%'}}
                trigger={<button className={'header__modal-menu'}>area riservata</button>} modal>
           {close => (
             <Modal close={close}/>

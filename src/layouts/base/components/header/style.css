@@ -1,9 +1,10 @@
 .header__logo {
     background: url('./images/logo.png') no-repeat 1.7%;
-    height: 100%;
-    flex-basis: 300px;
-    flex-grow: 1;
+    height: 75%;
+    flex-basis: 24.193548387vw;
+    align-self: center;
     background-size: contain;
+    margin: -0.2rem 0 0.9rem 1.25vw;
 }
 
 .header__modal-menu {
@@ -12,22 +13,28 @@
     color: white;
     box-sizing: border-box;
     position: relative;
-    padding-right: 19px;
+    padding-right: 1.5%;
     border: none;
     outline: none;
     background-color: #353436;
+    font-size: 0.666rem;
+    letter-spacing: 0.05em;
 }
 
 .header__modal-menu::after {
-    content: url("./images/lock.png");
+    background: url("./images/lock.png") no-repeat;
     position: absolute;
     right: 0;
+    height: 100%;
+    background-size: contain;
+    content: "";
+    width: 10%;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0.55vh 3vw 0 20px;
 }
 
 .header__main {
@@ -40,8 +47,7 @@
     text-decoration: none;
     color: white;
     outline: none;
-    padding: 0 15px;
-    font-size: 18px;
+    padding: 0 0.777rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -66,4 +72,8 @@
     flex-grow: 2;
     justify-content: flex-end;
     flex-shrink: 2;
+}
+
+.dropdown__title {
+    font-size: 0.97em;
 }

@@ -56,7 +56,7 @@ class SubscribeForm extends React.Component {
       <form className={`form${this.props.className ? ` ${this.props.className}` : ''}`} onSubmit={this.onSubmit}>
         <div className={'footer__form-field-wrapper form-field-wrapper'}>
           <FormField type={'text'} onChange={this.onChangeName} value={this.state.name} className={'footer__form-field'} placeholder={I18n.t('subscribe-form.full-name')}/>
-          <FormField type={'e-mail'} onChange={this.onChangeEmail} value={this.state.email} className={'footer__form-field'} placeholder={'Email'}/>
+          <FormField type={'email'} onChange={this.onChangeEmail} value={this.state.email} className={'footer__form-field'} placeholder={'Email'}/>
         </div>
         <Checkbox className={'footer__agreement'} onClick={this.onClick} checked={this.state.checked} text={I18n.t('form.agreement')}/>
         <SubmitButton text={I18n.t('subscribe-form.button')} disabled={!check()} className={'footer__subscribe-button'}/>

@@ -1,6 +1,6 @@
 .locale-list {
     list-style: none;
-    font-size: 14px;
+    font-size: 0.777rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     padding: 0;
@@ -11,7 +11,7 @@
 }
 
 .locale {
-    line-height: 24px;
+    line-height: 1;
     flex-grow: 1;
     text-align: center;
     border-left: 0.75px solid #fff;

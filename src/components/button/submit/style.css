@@ -11,9 +11,3 @@
 .submit-button:disabled {
     background: #000000;
 }
-
-.form__button {
-    text-transform: uppercase;
-    border: none;
-    width: 100%;
-}

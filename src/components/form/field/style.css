@@ -1,7 +1,6 @@
 .form-field {
     border: none;
-    font-size: 14px;
-    min-height: 32px;
+    font-size: 0.8rem;
 }
 
 .form-field::placeholder {
